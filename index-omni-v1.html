@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOT - Ensino Adaptativo</title>
+    <style>
+    </style>    
+    
+    <script>
+    // LAYOUT CHATBOT
+        function lcw() {
+            // Link Img Portal
+            var linkImg = "https://sesi.powerappsportals.com/logo-senai.png";
+        
+            // Link Img Portal
+            //var linkImg = "https://sesi.powerappsportals.com/logo-sesi.png";
+        
+            return {
+                confirmationPaneProps: {
+                    styleProps: {
+                        confirmButtonStyleProps: {
+                            borderColor: "black",
+                            color: "#FFFFFF",
+                            backgroundColor: "#E30513"
+                        },
+                        confirmButtonHoveredStyleProps: {
+                            borderColor: "black",
+                            color: "#FFFFFF",
+                            backgroundColor: "#E30513"
+                        },
+                        confirmButtonFocusedStyleProps: {
+                            borderColor: "black",
+                            color: "#FFFFFF",
+                            backgroundColor: "#E30513"
+                        },
+                    }
+                },
+                webChatContainerProps: {
+                    renderingMiddlewareProps: {
+                        avatarStyleProps: {
+                            backgroundImage: `url(${linkImg})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center center",
+                            backgroundColor: "#E30513"
+                        },
+                        avatarTextStyleProps: {
+                            display: "none"
+                        },
+                        receivedMessageAnchorStyles: {
+                            color: "#E30513"
+                        },
+                        sentMessageAnchorStyles: {
+                            color: "#E30513"
+                        }
+                    },
+                    adaptiveCardStyles: {
+                        background: "black",
+                        color: "black"
+                    },
+                    webChatStyles: {
+                        bubbleBackground: "#ffffff",
+                        bubbleTextColor: "#000000",
+                        bubbleFromUserBackground: "#ffffff",
+                        bubbleFromUserTextColor: "#000000"
+                    },
+                },
+                chatButtonProps: {
+                    styleProps: {
+                        generalStyleProps: {
+                            justifyContent: "start",
+                            alignItems: "center",
+                            borderStyle: "none",
+                            "&:hover": {
+                                backgroundColor: "#eeeeee",
+                            },
+                            width: "200px"
+                        },
+                        iconStyleProps: {
+                            cursor: "pointer",
+                            backgroundImage: `url(${linkImg})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            backgroundColor: "#E30513",
+                            borderStyle: "none",
+                            margin: "0px"
+                        },
+                        titleStyleProps: {
+                            fontSize: "12.4px",
+                            color: "#36454F",
+                            maxWidth: "300px",
+                            margin: "0px 0px 0px 5px"
+                        },
+                        subtitleStyleProps: {
+                            margin: "0px 0px 0px 5px"
+                        }
+                    }
+                },
+                headerProps: {
+                    styleProps: {
+                        closeButtonHoverStyleProps: {
+                            backgroundColor: "rgb(200, 200, 200, 0.2)",
+                            margin: "15px 2px 2px 2px",
+                            color: "black"
+                        },
+                        minimizeButtonHoverStyleProps: {
+                            backgroundColor: "rgb(200, 200, 200, 0.2)",
+                            margin: "15px 2px 2px 2px",
+                            color: "black"
+                        },
+                        minimizeButtonStyleProps: {
+                            backgroundColor: "#F7F7F7",
+                            margin: "15px 2px 2px 2px",
+                            color: "black"
+                        },
+                        closeButtonStyleProps: {
+                            backgroundColor: "#F7F7F7",
+                            margin: "15px 2px 2px 2px",
+                            color: "black"
+                        },
+                        iconStyleProps: {
+                            width: "0px",
+                            height: "0px",
+                            backgroundColor: "#E30513",
+                            borderStyle: "none"
+                        },
+                        titleStyleProps: {
+                            fontWeight: "bold",
+                            margin: "2px 0px 0px 0px",
+                            color: "black"
+                        }
+                    },
+                    controlProps: {
+                        headerTitleProps: {
+                            color: "black"
+                        }
+                    }
+                },
+                loadingPaneProps: {
+                    styleProps: {
+                        iconImageProps: {
+                            src: ""
+                        },
+                        iconStyleProps: {
+                            width: "100px",
+                            height: "100px",
+                            cursor: "pointer",
+                            backgroundImage: `url(${linkImg})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center center",
+                            backgroundColor: "#ED1C24",
+                            borderStyle: "none",
+                            margin: "0px"
+                        },
+                        spinnerTextStyleProps: {
+                            color: "black"
+                        },
+                        classNames: {
+                            color: "black"
+                        },
+                        subtitleStyleProps: {
+                            color: "black"
+                        },
+                        titleStyleProps: {
+                            color: "black"
+                        },
+                        generalStyleProps: {
+                            color: "black"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+</head>
+<body>
+
+<script 
+v2
+id="Microsoft_Omnichannel_LCWidget" 
+src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" 
+data-app-id="d7c8d5a8-0389-4e2d-9657-9a7f13d95e1b" 
+data-lcw-version="prod" 
+data-org-id="242fbbac-d457-ee11-a383-6045bd3ad0e6" 
+data-org-url="https://m-242fbbac-d457-ee11-a383-6045bd3ad0e6.br.omnichannelengagementhub.com"
+data-customization-callback="lcw"
+data-color-override="#FAF9F8"
+data-hide-chat-button="false"
+data-enable-lcw-autofill="true"
+>
+</script>
+
+
+</body>
+</html>

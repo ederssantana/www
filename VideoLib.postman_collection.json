@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "072b495e-61ad-4e9c-a937-00bad11166e7",
+		"name": "VideoLib",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1675347"
+	},
+	"item": [
+		{
+			"name": "Autenticação e Geração de Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "703e70c899a2406181ccddb9f55025d6",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.elasticencoder.videolib.live/vltools/sesi/auth?usuario=usuario@aluno.com.br&app=chatai&chave=49dbebb5-411e-45fe-9c82-3bf09f2f94b0&nomeUsuario=Nome Usuario&grupo=37&email=usuario@aluno.com.br",
+					"protocol": "https",
+					"host": [
+						"api",
+						"elasticencoder",
+						"videolib",
+						"live"
+					],
+					"path": [
+						"vltools",
+						"sesi",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "usuario",
+							"value": "usuario@aluno.com.br"
+						},
+						{
+							"key": "app",
+							"value": "chatai"
+						},
+						{
+							"key": "chave",
+							"value": "49dbebb5-411e-45fe-9c82-3bf09f2f94b0"
+						},
+						{
+							"key": "nomeUsuario",
+							"value": "Nome Usuario"
+						},
+						{
+							"key": "grupo",
+							"value": "37"
+						},
+						{
+							"key": "email",
+							"value": "usuario@aluno.com.br"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "703e70c899a2406181ccddb9f55025d6",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvIjoidXN1YXJpb0BhbHVuby5jb20uYnIiLCJOb21lVXN1YXJpbyI6Ik5vbWUgVXN1YXJpbyIsImRhdGFUb2tlbiI6IjIwMjQtMTItMTFUMTA6MDQ6NTQuMjU5MjM2Ny0wMzowMCIsIkJlYXJlciI6bnVsbCwiRm90byI6IiIsIkdydXBvIjoiMzciLCJFbWFpbCI6InVzdWFyaW9AYWx1bm8uY29tLmJyIiwiTWF0cmljdWxhIjpudWxsLCJDYW1wdXMiOm51bGwsIkNQRiI6bnVsbCwibWF0Y2giOiI4MDJiZWM4ZmQ1MzE4MTkyYjBhNzUiLCJpZEZpbGFVc3VhcmlvIjoiNERBMkEzOEI0MzY1NzY3OUNFMDYzMDEwQkZFNzgxMTE0NzJFMEVBQ0E4OTI3RjlDQ0FDQzdEMjE4OEMwQ0ZFMyIsInJvbGVzIjoiYWx1bm8ifQ.xLpbO-AHMeV8HmMkQ6WBx7boY4BMqfrFPj2saRltrFg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.elasticencoder.videolib.live/vltools/sesi/buscaroteiro?search=matemática&numeroPagina=0&objetosPorPagina=20",
+					"protocol": "https",
+					"host": [
+						"api",
+						"elasticencoder",
+						"videolib",
+						"live"
+					],
+					"path": [
+						"vltools",
+						"sesi",
+						"buscaroteiro"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "matemática"
+						},
+						{
+							"key": "numeroPagina",
+							"value": "0"
+						},
+						{
+							"key": "objetosPorPagina",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "703e70c899a2406181ccddb9f55025d6",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvIjoidXN1YXJpb0BhbHVuby5jb20uYnIiLCJOb21lVXN1YXJpbyI6Ik5vbWUgVXN1YXJpbyIsImRhdGFUb2tlbiI6IjIwMjQtMTItMTFUMTE6MTE6NTUuNTg1NTg1My0wMzowMCIsIkJlYXJlciI6bnVsbCwiRm90byI6IiIsIkdydXBvIjoiMzciLCJFbWFpbCI6InVzdWFyaW9AYWx1bm8uY29tLmJyIiwiTWF0cmljdWxhIjpudWxsLCJDYW1wdXMiOm51bGwsIkNQRiI6bnVsbCwibWF0Y2giOiI4MDJiZWM4ZmQ1MzE4MTkyYjBhNzUiLCJpZEZpbGFVc3VhcmlvIjoiNERBMkEzOEI0MzY1NzY3OUNFMDYzMDEwQkZFNzgxMTE0NzJFMEVBQ0E4OTI3RjlDQ0FDQzdEMjE4OEMwQ0ZFMyIsInJvbGVzIjoiYWx1bm8ifQ.dWQqMgTBb4-zuEAKkJnO3_YxcGVgEOmzBtJCfFaEDmE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.elasticencoder.videolib.live/vltools/sesi/downloadvideo/71737d3c1a7145f2924eb89bbcddf255?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvIjoidXN1YXJpb0BhbHVuby5jb20uYnIiLCJOb21lVXN1YXJpbyI6Ik5vbWUgVXN1YXJpbyIsImRhdGFUb2tlbiI6IjIwMjQtMTItMTFUMTE6MTE6NTUuNTg1NTg1My0wMzowMCIsIkJlYXJlciI6bnVsbCwiRm90byI6IiIsIkdydXBvIjoiMzciLCJFbWFpbCI6InVzdWFyaW9AYWx1bm8uY29tLmJyIiwiTWF0cmljdWxhIjpudWxsLCJDYW1wdXMiOm51bGwsIkNQRiI6bnVsbCwibWF0Y2giOiI4MDJiZWM4ZmQ1MzE4MTkyYjBhNzUiLCJpZEZpbGFVc3VhcmlvIjoiNERBMkEzOEI0MzY1NzY3OUNFMDYzMDEwQkZFNzgxMTE0NzJFMEVBQ0E4OTI3RjlDQ0FDQzdEMjE4OEMwQ0ZFMyIsInJvbGVzIjoiYWx1bm8ifQ.dWQqMgTBb4-zuEAKkJnO3_YxcGVgEOmzBtJCfFaEDmE",
+					"protocol": "https",
+					"host": [
+						"api",
+						"elasticencoder",
+						"videolib",
+						"live"
+					],
+					"path": [
+						"vltools",
+						"sesi",
+						"downloadvideo",
+						"71737d3c1a7145f2924eb89bbcddf255"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJVc3VhcmlvIjoidXN1YXJpb0BhbHVuby5jb20uYnIiLCJOb21lVXN1YXJpbyI6Ik5vbWUgVXN1YXJpbyIsImRhdGFUb2tlbiI6IjIwMjQtMTItMTFUMTE6MTE6NTUuNTg1NTg1My0wMzowMCIsIkJlYXJlciI6bnVsbCwiRm90byI6IiIsIkdydXBvIjoiMzciLCJFbWFpbCI6InVzdWFyaW9AYWx1bm8uY29tLmJyIiwiTWF0cmljdWxhIjpudWxsLCJDYW1wdXMiOm51bGwsIkNQRiI6bnVsbCwibWF0Y2giOiI4MDJiZWM4ZmQ1MzE4MTkyYjBhNzUiLCJpZEZpbGFVc3VhcmlvIjoiNERBMkEzOEI0MzY1NzY3OUNFMDYzMDEwQkZFNzgxMTE0NzJFMEVBQ0E4OTI3RjlDQ0FDQzdEMjE4OEMwQ0ZFMyIsInJvbGVzIjoiYWx1bm8ifQ.dWQqMgTBb4-zuEAKkJnO3_YxcGVgEOmzBtJCfFaEDmE"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

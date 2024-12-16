@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample App</title>
+    <style>
+        .container {
+        /*position: relative;*/
+        overflow: hidden;
+        width: 100%;
+		height: 100%;
+        /*padding-top: 50%;*/ /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+
+        /* Then style the iframe to fit in the container div with full height and width */
+        .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        }
+		
+		.ms-Stack.css-99 {
+		display: none;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <iframe class="responsive-iframe" frameborder="0" src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/v2public/htmls/chatv2.html?data-app-id=d7c8d5a8-0389-4e2d-9657-9a7f13d95e1b&data-org-id=242fbbac-d457-ee11-a383-6045bd3ad0e6&data-org-url=https://m-242fbbac-d457-ee11-a383-6045bd3ad0e6.br.omnichannelengagementhub.com&hostname=&data-lcw-version=prod&is-popout-mode=true"></iframe>
+    </div>
+
+</body>
+
+</html>

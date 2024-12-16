@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample App</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+    #webchat {
+      height: calc(100% - 50px);
+      /*height: calc(100% - 120px);*/
+      /*calc(100% - 50px); //bottom*/
+      overflow: hidden;
+      position: fixed;
+      top: 50px;; /*50px; 120px*/ 
+      width: 100%;
+      /*background-image: url('https://sm.ign.com/ign_latam/news/n/new-dragon/new-dragon-ball-series-dragon-ball-daima-confirmed-for-fall_bgma.jpg');*/
+      background-color: #dfdfdf !important;
+    }
+
+    div.ac-textBlock {
+      font-size: 36px !important;
+      line-height: 36px !important;
+    }
+
+    button.ac-pushButton.style-default.ac-selectable {
+      /* font-size: 36px !important;
+      line-height: 36px !important; */
+      word-wrap: break-word !important;
+      border-radius: 8px !important;
+      background-color: #380A4A !important;
+      border-width: 0 !important;
+    }
+
+    button.ac-pushButton.style-default.ac-selectable div {
+      white-space: normal !important;
+      color: #fff !important;
+    }
+    </style>
+    <script>
+        function lcw() {
+            return {
+                styleProps: {
+                    generalStyles: {
+                        width: "465px",
+                        height: "650px",
+                        left: "0px",
+                        top: "0px",
+                        right: "0px",
+                        bottom: "0px"
+                    }
+                },
+                controlProps: {
+                    hideHeader: true,
+                    hideFooter: true,
+                    hideStartChatButton: true
+                },
+                webChatContainerProps: {
+                    renderingMiddlewareProps: {
+                        disableAvatarMiddleware: true
+                    },
+                    adaptiveCardStyles: {
+                        background: "#CCC",
+                        color: "black"
+                    },
+                    webChatStyles: {
+                        bubbleBackground: '#FFF',
+                        bubbleBorderColor: '#CCCCFF',
+                        bubbleBorderRadius: 5,
+                        bubbleBorderStyle: 'solid',
+                        bubbleTextColor: "black",
+                        bubbleFromUserBackground: '#F1E6F4',
+                        // bubbleFromUserBorderColor: '#000',
+                        bubbleFromUserBorderRadius: 5,
+                        bubbleFromUserTextColor: "black",
+                        hideUploadButton: true,
+                        avatarSize: 0,
+                        suggestedActionBackgroundColor: "#CCC",
+                        suggestedActionBorderColor: "#CCC",
+                        suggestedActionTextColor: "black",
+                        suggestedActionLayout: "flow" // "stacked"
+                    }
+                },
+                loadingPaneProps: {
+                    controlProps: {
+                        hideLoadingPane: true
+                    },
+                },
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Your content goes here -->
+        <div id="oc-lcw-container" style="width: 100px !important; height: 100px !important;"></div>
+        
+        <!--<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="0d200658-584a-4e47-b23c-2a413d7cce06" data-lcw-version="prod" data-org-id="242fbbac-d457-ee11-a383-6045bd3ad0e6" data-org-url="https://m-242fbbac-d457-ee11-a383-6045bd3ad0e6.br.omnichannelengagementhub.com"></script>-->
+
+        <!-- L3 -->
+        <script v2 id="Microsoft_Omnichannel_LCWidget" 
+        src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" 
+        data-app-id="0d200658-584a-4e47-b23c-2a413d7cce06" 
+        data-org-id="242fbbac-d457-ee11-a383-6045bd3ad0e6" 
+        data-org-url="https://m-242fbbac-d457-ee11-a383-6045bd3ad0e6.br.omnichannelengagementhub.com"
+        data-customization-callback="lcw"
+        data-enable-lcw-autofill="true"
+        >
+        </script>
+        
+        <!-- I4D
+        <script v2 id="Microsoft_Omnichannel_LCWidget"
+            src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+            data-app-id="d7c8d5a8-0389-4e2d-9657-9a7f13d95e1b" data-lcw-version="prod"
+            data-org-id="242fbbac-d457-ee11-a383-6045bd3ad0e6"
+            data-org-url="https://m-242fbbac-d457-ee11-a383-6045bd3ad0e6.br.omnichannelengagementhub.com"
+            data-customization-callback="lcw">
+        </script>-->
+
+    </div>
+
+</body>
+
+</html>
